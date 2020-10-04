@@ -1,4 +1,4 @@
-# Weather_Website
+# Task_Manager
 This REST API allows the user to create a profile for which they can add personalised tasks that are stored in a MongoDB database. The user will also have the ability to read, update and delete their profile and the tasks created as well as add their own avatar image. This API comes with its own authentication system so that the user can log into their exisiting profile with a POST request, preventing any other users from tampering with a profile they don't have access to the credentials for. Furthermore, passwords are hashed for security purposes prior to storing them in the database.
 
 ## Installation
