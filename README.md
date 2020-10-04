@@ -33,7 +33,7 @@ From here, load localhost:3000 \(default port is set to 3000\) on an API client 
 In Postman, set up an environmental variable of "authToken" and add the following code to "Tests" for the Create user request:
 
 ```bash
-if (pm.response.code === 201) \{
+if (pm.response.code === 201) {
     pm.environment.set('authToken', pm.response.json().token) 
 }
 ```
@@ -41,7 +41,7 @@ if (pm.response.code === 201) \{
 For login user:
 
 ```bash
-if (pm.response.code === 200) \{
+if (pm.response.code === 200) {
     pm.environment.set('authToken', pm.response.json().token) 
 }
 ```
