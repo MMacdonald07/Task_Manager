@@ -7,11 +7,14 @@ This REST API allows the user to create a profile for which they can add persona
 Clone this repository to your machine using https://github.com/MMacdonald07/Task_Manager.git
 
 ### Setup
+This API requires MongoDB to be installed and active so a database can be altered while the program is running. This can be done [here](https://docs.mongodb.com/manual/administration/install-community).
+
 Use the package manager npm to install prerequisite node modules so the program can run:
 
 ```bash
 npm install
 ```
+After this, some environmental variables will need setting up: the port \(can set to 3000\), your json webtoken secret, sendgrid API key and your MongoDB database URL \(can set to mongodb://127.0.0.1:27017/task-manager\).
 
 ## Usage
 Requests are ready to be made from https://macd-task-manager.herokuapp.com with an API client. 
@@ -28,7 +31,7 @@ Developer mode can also be used - this will run the script with nodemon so the s
 npm run dev
 ```
 
-From here, load localhost:3000 \(default port is set to 3000\) on an API client e.g. Postman.
+From here, load localhost:3000 on an API client e.g. Postman.
 
 In Postman, set up an environmental variable of "authToken" and add the following code to "Tests" for the Create user request:
 
